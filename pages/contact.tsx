@@ -1,14 +1,15 @@
-import type { NextPage } from 'next'
-import Link from 'next/link'
+import Link from 'next/link';
+import { NextPage } from 'next';
 import { MainLayout } from '../components/layouts/MainLayout';
 
-const Home: NextPage = () => {
+
+const Contact: NextPage = () => {
   return (
     <MainLayout>
-      <h1>Home Page</h1>
+      <h1>Contact Page</h1>
 
       <h1 className={'title'}>
-        Ir a <Link href="/about">About</Link>
+        Ir a <Link href="/">Home</Link>
       </h1>
 
       <p className={'description'}>
@@ -17,6 +18,6 @@ const Home: NextPage = () => {
       </p>
     </MainLayout>
   )
-}
+};
 
-export default Home
+export default Contact;
